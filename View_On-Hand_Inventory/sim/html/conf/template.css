@@ -1,0 +1,67 @@
+﻿html,body
+{
+margin:0;
+padding:0;
+}
+
+/*
+The default font family used in all pages when none is specified
+*/
+body,td,li,ul,ol,label,pre
+{
+color: rgb(0,0,0);
+font-family:'Arial', Arial, Helvetica, sans-serif;
+font-size:10pt;
+text-align:left;
+}
+
+/*
+Primary text color of the entire UI
+This should pertain to titles, etc. within the interface
+Default: #FFFFFF;
+*/
+.uiTextColor,
+.uiTextColor a,
+.uiTextColor a:link,
+.uiTextColor a:visited,
+.uiTextColor a:active
+{
+color:#FFFFFF;
+}
+
+/*
+Primary background color of the skin's UI
+This should pertain to the header and footer backgrounds, etc.
+Default: #7D99C4;
+*/
+.uiPrimaryBackgroundColor
+{
+background-color:#7D99C4;
+}
+
+/*
+Secondary background color of the skin's UI
+This should pertain to the background of the interface elements, such as buttons, etc.
+Default: #426091;
+*/
+.uiSecondaryBackgroundColor
+{
+background-color:#426091;
+}
+
+/*
+Main background color of the entire interface.
+Default: #D1CDCB;
+*/
+.uiSimBackgroundColor
+{
+background-color:#D1CDCB;
+}
+
+.uiStepWinText
+{
+color: rgb(0,0,0);
+font-family:'Arial', Arial, Helvetica, sans-serif;
+font-size:10pt;
+text-align:left;
+}

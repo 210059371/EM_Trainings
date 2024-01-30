@@ -1,0 +1,1538 @@
+
+html,body
+{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	-webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+}
+
+body,div,a
+{
+	font-size:12px;
+}
+
+a:link
+{
+	text-decoration:none;
+}
+
+a:visited
+{
+	text-decoration:none;
+	outline:none;
+}
+
+a:active
+{
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover
+{
+	text-decoration:underline;
+}
+
+/*
+=====================================================================
+UI
+=====================================================================
+*/
+#content
+{
+	position:absolute;
+	overflow:auto;
+	left:0;
+	top:0;
+	width:780px;
+	height:600px;
+	margin:0px;
+	padding:0px;
+	z-index:1;
+	border:0;
+	/*background:#ccc;*/
+}
+
+/*
+=====================================================================
+Header
+=====================================================================
+*/
+div#header
+{
+	position:absolute;
+	width:780px;
+	min-height:75px;
+	top:0px;
+	left:0px;
+	z-index:40;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+div#title
+{
+	margin:2px 4px 2px 4px;
+}
+
+/*
+=====================================================================
+Dialog
+=====================================================================
+*/
+div#dialog
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:400px;
+	background:#333;
+	padding:2px;
+}
+
+div#dialogHeader
+{
+	height:30px;
+	width:100%;
+	cursor:move;
+}
+
+div#dialogHeaderLabel
+{
+	float:left;
+	font-weight:bold;
+	font-size:12px;
+	margin:0 0 0 5px
+}
+
+div.dialogHeaderContent
+{
+	vertical-align:middle;
+	font-size:12px;
+	padding:8px 10px 0 0;
+}
+
+div#dialogHeaderBtn
+{
+	float:right;
+	margin:0 0 0 5px;
+}
+
+div#dialogContentContainer
+{
+	padding:2px;
+}
+
+div.dialogContent
+{
+	padding:0 10px 10px 10px;
+	clear:both;
+	color:#fff;
+	max-height:200px;
+	min-height:50px;
+	overflow:auto;
+}
+
+div.dialogButton
+{
+	float:right;
+	padding:4px 6px 4px 6px;
+	cursor:pointer;
+	cursor:hand;
+	margin:10px 5px 10px 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+div#dialogBackground
+{
+	background:#000;
+}
+
+/*
+=====================================================================
+Transcript
+=====================================================================
+*/
+div#transcript
+{
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	width:50px;
+	height:200px;
+	z-index:500;
+	display:none;
+	background-color:#f6f6f6;
+}
+
+div#transcriptContent
+{
+	position:absolute;
+	z-index:1;
+	width:100%;
+	opacity:1;
+	filter:alpha(opacity=100);
+	clear:both;
+	height:170px;
+	overflow:auto;
+}
+
+div#transcriptText
+{
+	color:#000;
+	margin:10px 10px 0 10px;
+	padding:0 0 30px 0;
+	background-color:#f6f6f6;
+}
+
+div#transcriptHeader
+{
+	width:100%;
+	height:25px;
+}
+
+div#transcriptHeaderText
+{
+	float:left;
+	margin:4px 0 0 2px;
+	font-size:14px;
+	font-weight:bold;
+}
+
+div#transcriptCloseBtn
+{
+	float:right;
+	margin:4px;
+}
+
+/*
+=====================================================================
+Location/Step/Timeline
+=====================================================================
+*/
+
+div#timelineBar
+{
+	position:absolute;
+	height:20px;
+	bottom:0px;
+	left:0px;	
+}
+
+div#timelineBarContent
+{
+	white-space:nowrap;
+	height:10px;
+	line-height:8px;
+	margin:3px;
+}
+
+div#timelineEntries
+{
+	height:10px;
+	border:1px solid #fff;
+	padding:1px;
+}
+
+div.timelineEntry
+{
+	cursor:pointer;
+	cursor:hand;
+	width:10px;
+	display: -moz-inline-stack;
+	display: inline-block;
+	*display: inline;
+	margin:0 1px 0 0;
+	zoom:1;
+}
+
+div.durationEntry
+{
+	background:#fff;
+	width:1%;
+	height:100%;
+	opacity:0.25;
+	filter:alpha(opacity=25);
+}
+
+div#stepBar,
+div#hintBar
+{
+	float:left;
+	min-width:100px;
+	height:24px;
+	line-height:24px;
+	margin:2px 0 0 2px;
+	white-space:nowrap;
+}
+
+div.stepBarTextContent,
+div.stepBarTextContent p,
+div.stepBarImgContent,
+div.hintEntry
+{
+	vertical-align:top;
+	line-height:24px;
+	display: -moz-inline-stack;
+	display: inline-block;
+	*display: inline;
+	zoom:1;
+}
+div.stepBarTextContent
+{
+	margin:0 2px 3px 2px;
+}
+div.stepBarImgContent
+{
+	margin:4px 4px 0 4px;
+}
+
+/*
+=====================================================================
+Footer
+=====================================================================
+*/
+div#footer
+{
+	position:absolute;
+	width:780px;
+	min-height:30px;
+	max-height:30px;
+	bottom:0px;
+	left:0px;
+	z-index:50;
+	/*background-image:url(footer_bg.png);*/
+}
+
+/*
+=====================================================================
+Menu (Step Window)
+=====================================================================
+*/
+div#menu
+{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:300px;
+	height:400px;
+	z-index:850;
+	display:none;
+	opacity:1;
+	filter:alpha(opacity=100);
+	text-align:left !important;
+	border:2px solid #333;
+	padding:0 0 50px 0;
+	background:#ccc;
+}
+
+div#menuHeader
+{
+	height:30px;
+	width:100%;
+	cursor:move;
+}
+
+div.menuHeaderLabel
+{
+	float:left;
+	font-weight:bold;
+	color:#fff;
+	margin:0 0 0 5px;
+}
+
+div.menuHeaderContent
+{
+	vertical-align:middle;
+	font-size:12px;
+	padding:8px 10px 0 0;
+}
+
+div.menuHeaderBtn
+{
+	float:right;
+	margin:0 0 0 5px;
+}
+
+div.menuHeaderBtn a,
+div.menuHeaderBtn a:link,
+div.menuHeaderBtn a:visited,
+div.menuHeaderBtn a:active,
+div.menuHeaderBtn a:hover
+{
+	color:#fff;
+	font-size:12px;
+}
+
+div.menuHeaderBtn a.skipSection
+{
+	display:block;
+	width:1px;
+	height:1px;
+	margin-left:-9999px;
+}
+
+div.menuHeaderBtn a.skipSection:focus
+{
+	display:block;
+	width:auto;
+	height:auto;
+	margin-left:0;
+}
+
+div#menuContent
+{
+	position:relative;
+	z-index:1;
+	overflow:auto;
+	width:100%;
+	height:100%;
+	opacity:1;
+	filter:alpha(opacity=100);
+	font-size:12px;
+	text-align:left !important;
+	background:#333;
+}
+
+div#menuEntries
+{
+	position:absolute;
+	z-index:1;
+	width:100%;
+}
+
+div#menuContent img
+{
+	vertical-align:middle;
+	border:0;
+	max-height:32px;
+}
+
+div#menuFooter
+{
+	position:relative;
+	height:20px;
+	width:100%;
+	background:#f4f4f4;
+}
+
+div#menuResizer
+{
+	position:absolute;
+	top:100%;
+	left:100%;
+	height:15px;
+	width:15px;
+	margin:-15px 0 0 -15px;
+	background:url("menu_resizer.png") #ccc;
+	cursor:se-resize;
+}
+
+div.menuEntry
+{
+	margin:0 0 0 5px;
+	white-space:nowrap;
+}
+
+div.stepElementsContainer
+{
+	background:#333;
+}
+
+div.menuEntryGroupContainer
+{
+	width:100%;
+	min-height:30px;
+	margin:1px 0 0 0;
+	background:#666;
+	cursor:pointer;
+	cursor:hand;
+}
+
+div.menuEntryGroupContainer:focus,
+div.menuEntryGroupContainer:hover
+{
+	background:#999;
+}
+
+div.stepContainer
+{
+	padding:1px;
+}
+
+div.stepContainer:focus,
+div.stepContainer:hover
+{
+	border:1px solid #fff;
+	padding:0;
+}
+
+td.menuEntryGroupLabel
+{
+	width:100%;
+	padding:6px 3px 3px 3px;
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+}
+
+table.menuEntryStepContainer
+{
+	width:100%;
+	padding:0;
+	margin:1px 0 0 0;
+	cursor:pointer;
+	cursor:hand;
+}
+
+table.menuEntryStepContainerDefault
+{
+	background:#eee;
+}
+
+td.menuEntryStepStatus
+{
+	margin:0;
+	padding:0;
+	width:20px;
+	text-align:center;
+}
+
+td.menuEntryStepStatusDefault
+{
+	background:#666;
+}
+
+img.menuEntryStepStatusImg
+{
+	margin:10px;
+}
+
+td.menuEntryStepActionIcon
+{
+	width:20px;
+	margin:0;
+	padding:0;
+}
+
+img.menuEntryStepActionIconImg
+{
+	margin:5px;
+}
+
+td.menuEntryStepContent
+{
+	margin:0;
+	padding:0;
+}
+
+div.menuEntryStepContentLabel
+{
+	padding:3px 0 2px 5px;
+}
+
+/*
+=====================================================================
+nav/aux
+=====================================================================
+*/
+div.navBtn,
+div.auxBtn
+{
+	float:right;
+	white-space:nowrap;
+}
+
+div#nav,
+div#aux
+{
+	white-space:nowrap;
+}
+
+div.navBtn
+{
+	margin:0 5px 0 0;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+div.auxBtn
+{
+	margin:3px 5px 0 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+div.navBtnContent
+{
+	white-space:nowrap;
+	cursor:pointer;
+	cursor:hand;
+	margin:0 6px 4px 6px;
+}
+
+div.auxBtnContent
+{
+	white-space:nowrap;
+	cursor:pointer;
+	cursor:hand;
+	margin:2px;
+}
+
+div.navBtnGraphic
+{
+	float:left;
+	margin:4px 2px 3px 2px;
+	outline:none;
+}
+
+div#nextBtn,
+div#backBtn
+{
+	opacity:1;
+	filter:alpha(opacity=100);
+	outline:none;
+}
+
+div.navBtnLabel a:link,
+div.navBtnLabel a:visited,
+div.navBtnLabel a:active
+{
+	font-size:14px;
+	font-weight:bold;
+}
+
+div.navBtnLabel a:hover
+{
+	font-size:14px;
+	font-weight:bold;
+}
+
+div.auxBtnLabel a:link,
+div.auxBtnLabel a:visited,
+div.auxBtnLabel a:active
+{
+	font-size:12px;
+}
+
+div.auxBtnLabel a:hover
+{
+	font-size:12px;
+}
+
+div.auxBtnLabel
+{
+	margin:3px;
+}
+
+div#backBtn
+{
+	margin-left:5px;
+}
+
+div#locationContent
+{
+	float:right;
+}
+
+div#locationText
+{
+	margin:5px;
+	white-space:nowrap;
+	font-size:12px;
+	font-weight:bold;
+	white-space:nowrap;
+}
+
+div.assess
+{
+	z-index:200;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin:-10px -110px 0 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/*
+=====================================================================
+Auto-Playback
+=====================================================================
+*/
+
+div#playbackPlayBtn
+{
+	display:none;
+	opacity:1;
+	filter:alpha(opacity=100);
+	outline:none;
+}
+
+div#playbackPauseBtn
+{
+	opacity:1;
+	filter:alpha(opacity=100);
+	outline:none;
+}
+
+/*
+=====================================================================
+Audio
+=====================================================================
+*/
+
+div#audioControls
+{
+	float:right;
+	margin:2px 5px 0 0;
+	white-space:nowrap;
+}
+
+div#audioLabel
+{
+	float:left;
+	font-size:12px;
+	margin:3px 10px 4px 0;
+	font-weight:bold;
+}
+
+div#audioLoading
+{
+	display:none;
+}
+
+div#audioPlayBtn,
+div#audioPlayBtnAuto,
+div#audioPauseBtn,
+div#audioStopBtn,
+div#transcriptBtn,
+div#audioDisableBtn,
+div#audioEnableBtn,
+div#audioLoading
+{
+	float:left;
+	margin:4px 2px 3px 2px;
+}
+
+div#audioPlayBtn,
+div#audioStopBtn
+{
+	opacity:0.30;
+	filter:alpha(opacity=30);
+}
+
+div#audioPauseBtn,
+div#audioPlayBtnAuto,
+div#audioEnableBtn
+{
+	display:none;
+}
+
+div#audioPosition
+{
+	float:left;
+	font-size:12px;
+	margin:4px 6px 4px 10px;
+}
+div#iosAudioPrompt,
+div#iosAudioPromptAuto
+{
+	position:absolute;
+	right:240px;
+	bottom:25px;
+	width:250px;
+	height:100px;
+	z-index:1001;
+	display:none;
+}
+
+div#iosAudioPromptAuto
+{
+	right:260px;
+}
+
+div.iosAudioPromptHeader
+{
+	background:url(ios_audio_promt_header.png) repeat-x #999;
+	padding:10px;
+	font-weight:bold;
+	text-align:center;
+	border:1px solid #999;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+div.iosAudioPromptContent
+{
+	background:#333;
+	color:#fff;
+	padding:10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+div.iosAudioPromptPointer
+{
+	position:relative;
+	height:10px;
+	width:200px;
+	background:url(ios_audio_promt_pointer.png) no-repeat;
+}
+
+div#iosAudioPrompt div.iosAudioPromptPointer
+{
+	 background-position:95px 0px;
+}
+
+div#iosAudioPromptAuto div.iosAudioPromptPointer
+{
+	background-position:100px 0px;
+}
+
+/*
+=====================================================================
+Actions
+=====================================================================
+*/
+.textField
+{
+	vertical-align:middle;
+	border:transparent;
+	background:#fff;
+	color:#000;
+}
+
+/*
+=====================================================================
+iOS Actions
+=====================================================================
+*/
+div#inputBar
+{
+	display:none;
+	position:absolute;
+	right:0;
+	bottom:50px;
+	width:380px;
+	height:58px;
+	z-index:900;
+	background:#555;
+	padding:0 2px;
+	-webkit-border-radius:7px;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+div#inputBarToggleBtn
+{
+	display:none;
+	position:absolute;
+	right:0;
+	bottom:47px;
+	width:32px;
+	height:64px;
+	z-index:901;
+}
+div#inputBar div.inputBarBtn img,
+div#inputBarToggleBtn.inputBarBtnClose img,
+div#inputBarToggleBtn.inputBarBtnOpen img
+{
+	width:100%;
+	height:100%;
+}
+div#inputBarToggleBtn.inputBarBtnClose
+{
+	background:url(ios_input_close.png) no-repeat;
+}
+div#inputBarToggleBtn.inputBarBtnOpen
+{
+	background:url(ios_input_open.png) no-repeat;
+}
+div#inputBar div.inputBarBtn
+{
+	border:2px solid #999;
+	-webkit-border-radius: 7px;
+	-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#C9C9CB),to(#A9A9AE));
+}
+div#inputBar div#inputBarCtrl,
+div#inputBar div#inputBarAlt,
+div#inputBar div#inputBarShift,
+div#inputBar div#inputBarHelp
+{
+	color: #000;
+	font-family: arial,helvetica,sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 8px 4px;
+	text-decoration: none;
+	margin:10px 3px;
+	text-shadow: rgba(255,255,255,0.6) 0 1px, rgba(0,0,0,0.4) 0 -1px;
+}
+div#inputBar div#inputBarHelp
+{
+	margin-left:7px;
+	font-size: 18px;
+	padding: 6px 12px;
+}
+div#inputBar div#inputBarCtrl,
+div#inputBar div#inputBarAlt,
+div#inputBar div#inputBarShift,
+div#inputBar div#inputBarMouse,
+div#inputBar div#inputBarKey,
+div#inputBar div#inputBarHelp
+{
+	float:left;
+}
+div#inputBar div#inputBarMouse,
+div#inputBar div#inputBarKey
+{
+	margin:10px 3px;
+	height:28px;
+	width:30px;
+	padding:7px 0 0 5px;
+}
+div#inputBar div#inputBarMouse img
+{
+	background:url(ios_input_mouse.png) no-repeat;
+}
+div#inputBar div#inputBarMouse img.active
+{
+	background:url(ios_input_mouse_active.png) no-repeat;
+}
+div#inputBar div#inputBarKey img
+{
+	background:url(ios_input_key.png) no-repeat;
+}
+div#inputBar div#inputBarKey img.active
+{
+	background:url(ios_input_key_active.png) no-repeat;
+}
+div#inputBar div.inputBarSep
+{
+	float:left;
+	width:2px;
+	height:32px;
+	margin:14px 5px;
+	background:url(ios_input_sep.png) no-repeat;
+}
+div#inputBar div.active
+{
+	border:2px solid #06c;
+}
+div#inputBar div#inputBarCtrl.active,
+div#inputBar div#inputBarAlt.active,
+div#inputBar div#inputBarShift.active,
+div#inputBar div#inputBarHelp.active
+{
+	color:#06c;
+}
+div#keyMenu
+{
+	position:absolute;
+	right:0;
+	top:50px;
+	width:300px;
+	height:600px;
+	z-index:851;
+	display:none;
+	opacity:0;
+	text-align:left !important;
+	border:2px solid #333;
+	background:#333;
+	overflow:auto;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+div#keyMenuContent
+{
+	margin:2px;
+}
+div#keyMenuContent div.keyMenuEntry
+{
+	background:#444;
+	padding:10px;
+	color:#fff;
+	margin:0 0 1px 0;
+	font-size:16px;
+}
+div#keyMenuContent div.keyMenuEntry:active
+{
+	background:#222;
+}
+div#dragDropSelection
+{
+	position:absolute;
+	top:0;left:0;width:100px;height:100px;
+	z-index:100;
+	border:5px solid #000;
+	background:#666;
+	opacity:0;
+	-webkit-border-radius:10px;
+}
+/*
+=====================================================================
+iOS Input Bar Help
+=====================================================================
+*/
+div#inputBarHelpOverlay
+{
+	display:none;
+	position:absolute;
+	top:0;left:0;width:100%;height:100%;
+	z-index:2000;
+	background:#000;
+	opacity:0.75;
+}
+
+div#inputBarHelpContent div#ibHelp,
+div#inputBarHelpContent div#ibModifierKeys,
+div#inputBarHelpContent div#ibToggle,
+div#inputBarHelpContent div#ibKeyMenuToggle,
+div#inputBarHelpContent div#ibRightClickToggle
+{
+	width:225px;
+	background:#000;
+	border:4px solid #fff;
+	position:absolute;
+	z-index:2001;
+	-webkit-border-radius:10px;
+}
+
+div#inputBarHelpContent div label
+{
+	text-align:center;
+	display:block;
+	font-weight:bold;
+	font-size:18px;
+	color:#fff;
+	margin:6px;
+}
+
+div#inputBarHelpContent div p
+{
+	display:block;
+	font-weight:normal;
+	font-size:14px;
+	color:#fff;
+	margin:8px;
+}
+
+div#inputBarHelpContent div#ibHelp
+{
+	top:0;
+	left:0;
+}
+
+div#inputBarHelpContent div#ibModifierKeys
+{
+	top:0;
+	left:235px;
+}
+
+div#inputBarHelpContent div#ibToggle
+{
+	top:0;
+	left:470px;
+}
+
+div#inputBarHelpContent div#ibKeyMenuToggle
+{
+	top:420px;
+	left:470px;
+}
+
+div#inputBarHelpContent div#ibRightClickToggle
+{
+	top:420px;
+	left:0;
+}
+
+div#inputBarHelpContent div#inputBarHelpImg
+{
+	position:absolute;
+	top:0;
+	left:25px;
+	z-index:2000;
+}
+div#inputCloseBtn
+{
+	display:none;
+	position:absolute;
+	top:10px;
+	right:10px;
+	z-index:2001;
+}
+
+/*
+=====================================================================
+Options
+=====================================================================
+*/
+div#options
+{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	z-index:850;
+	display:none;
+}
+
+div#optionHeader
+{
+	height:30px;
+	width:100%;
+}
+
+div.optionHeaderLabel
+{
+	float:left;
+	font-weight:bold;
+	color:#fff;
+	margin:0 0 0 5px;
+}
+
+div.optionHeaderContent
+{
+	vertical-align:middle;
+	font-size:12px;
+	padding:8px 10px 0 0;
+}
+
+div#optionTimeDelayLabel
+{
+	float:left;
+	font-weight:bold;
+	font-size:12px;
+	color:#fff;
+	margin:5px 5px 0 0;
+}
+
+div#optionSecondsLabel
+{
+	margin: 15px 0 0 175px;
+	float:left;
+	color:#fff;
+}
+
+div#optionTimerLabel
+{
+    padding:5px 0px 0px 5px
+}
+
+div.optionTimeContent
+{
+	vertical-align:left;
+	font-size:12px;
+	padding:10px 10px 0 25px;
+}
+
+div#optionControls
+{
+	position: absolute;
+	left: 50px;
+	top: 75px;
+	margin:0 0 0 25px;
+	white-space:nowrap;
+}
+
+div#optionSaveBtn,
+div#optionCancelBtn
+{
+	float:left;
+	margin:30px 0 0 5px;
+}
+
+div#optionContent
+{
+	position:relative;
+	z-index:1;
+	overflow:auto;
+	width:100%;
+	height:100%;
+	opacity:1;
+	filter:alpha(opacity=100);
+	font-size:12px;
+	text-align:left !important;
+	background:#333;
+}
+
+div.optionBtn
+{
+	/*margin:20px 5px 0 0;*/
+	white-space:nowrap;
+	font-weight:bold;
+	font-size:12px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+div.optionBtnContent
+{
+	white-space:nowrap;
+	cursor:pointer;
+	cursor:hand;
+	margin:2px;
+}
+
+.modalBackground
+{
+    background: none repeat scroll 0 0 #333333 !important;
+    filter: Alpha(Opacity=70); -moz-opacity:0.7; opacity: 0.7 !important; 
+    width: 100%; height: 100%;
+    position: absolute;
+    z-index: 500;
+    top: 0px; left: 0px;
+}
+.modalContainer
+{    
+    position:absolute;
+    z-index: 750;
+    /*background: none repeat scroll 0 0 rgba(255, 255, 255, 1);*/
+    max-height:160px;
+    max-width:250px;
+    width:100%;
+}
+
+div#optionsPanel
+{    
+    height:20px;
+    width:20Px;
+    overflow:auto;
+}
+
+div#optionsMain
+{
+    height:160px;
+    width:250px;
+    background:#333;
+}
+
+
+/*
+=====================================================================
+Loading
+=====================================================================
+*/
+div#loadingMessage
+{
+	z-index:1100;
+	position:absolute;
+	top:0;
+	left:0;
+	display:block;
+	width:100%;
+	height:100%;
+	background:#fff;
+}
+
+div#loadingMessage div#loadingText
+{
+	font-size:32px;
+	color:#999;
+	margin:50px 0 0 50px;
+	/*text-align:center !important;*/
+}
+
+div#loadingImage
+{
+	width:16px;
+	height:16px;
+	border:0;
+	background:url("../assets/img/loading.gif") no-repeat;
+	float:left;
+	vertical-align:bottom;
+	margin:10px 8px 0 0;
+}
+
+/*
+=====================================================================
+User name prompt page (send results)
+=====================================================================
+*/
+body.uiPromptPageBackground
+{
+	background-color: #E8E6E1;
+	margin: 10px auto;
+	text-align: center;
+}
+
+div.uiPromptContainer
+{
+	width:480px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#titleTextDiv
+{
+	text-align:right;
+	font-weight:bold;
+	font-size:14pt;
+	color:#86A4D3;
+	font-family:Tahoma;
+	margin:5px;
+}
+
+table#studentNameTable
+{
+	text-align:left;
+	background:#86A4D3;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+td.uiPromptBackground
+{
+	background-image: url("../assets/img/ui_bkgd.png"); 
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+
+div.uiPromptText
+{
+	font-weight:bold;
+	color:#fff;
+}
+
+div.uiPromptText p
+{
+	margin:2px 0;
+	padding:0;
+}
+
+input.uiUserNameField
+{
+
+}
+
+input.uiPromptSubmitBtn
+{
+
+}
+
+td#promptLineImage
+{
+	background-image:url("../assets/img/ui_line.png");
+	background-repeat: no-repeat;
+	width:430px;
+	height:1px;
+}
+
+
+/* Mobile media queries */
+
+/* iPad and similar */
+@media only screen and (max-width: 768px){
+	div#audioLabel,
+	div#audioPosition
+	{
+		display:none;
+	}
+	div#stepBar
+	{
+		max-width:250px !important;
+		min-width:100px !important;
+		overflow:hidden;
+	}
+
+	div#iosAudioPrompt
+	{
+		right:152px;
+	}
+
+	div#iosAudioPromptAuto
+	{
+		right:175px;
+	}
+}
+
+html[dir='rtl'] .menuHeaderLabel
+{
+	float: right;
+}
+
+html[dir='rtl'] .menuHeaderBtn
+{
+	float: left;
+}
+
+html[dir='rtl'] div.menuHeaderBtn a.skipSection
+{
+	margin-right:-9999px;
+}
+
+html[dir='rtl'] div#locationContent
+{
+	float: left;
+}
+
+html[dir='rtl'] div.navBtn
+{
+	float: left;
+}
+
+
+html[dir='rtl'] div.optionHeaderLabel
+{
+	float: right;
+}
+
+html[dir='rtl']  div#optionSaveBtn,
+html[dir='rtl']  div#optionCancelBtn
+{
+	float:right;
+}
+
+img.menuEntryStatusHereImg
+{
+	margin:10px;
+}
+
+html[dir='rtl'] .menuEntryStatusHereImg
+{
+	-webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */ 
+	-moz-transform: rotate(180deg);        /* FF */ 
+	-o-transform: rotate(180deg);          /* Opera */ 
+	-ms-transform: rotate(180deg);         /* IE */
+	transform: rotate(180deg);             /* W3C complaint browsers */
+	margin:10px;
+}
+
+label.timeDelayLabel
+{
+	margin-left: 5px;
+}
+
+html[dir='rtl'] label.timeDelayLabel
+{
+	margin-right: 5px;
+}
+
+html[dir='rtl'] div#stepBar,
+html[dir='rtl'] div#hintBar {
+    float:right;
+    margin: 2px 2px 0 0;
+}
+
+html[dir='rtl'] div.auxBtn {
+    float:left;
+    margin: 3px 0 0 5px;
+}
+
+html[dir='rtl'] div.navBtn{
+    margin: 0 0 0 5px;
+}
+
+html[dir='rtl'] div.navBtn,
+html[dir='rtl'] div.auxBtn {
+    float:left;
+}
+
+html[dir='rtl'] div#audioControls {
+    float:left;
+    margin: 2px 0 0 5px;
+}
+
+html[dir='rtl'] div#audioLabel {
+    float: right;
+    margin: 3px 0 4px 10px;
+}
+
+html[dir='rtl'] div#audioPosition {
+    float: right;
+    margin: 4px 10px 4px 6px;
+}
+
+html[dir='rtl'] div#audioPlayBtn, 
+html[dir='rtl'] div#audioPlayBtnAuto, 
+html[dir='rtl'] div#audioPauseBtn, 
+html[dir='rtl'] div#audioStopBtn, 
+html[dir='rtl'] div#transcriptBtn, 
+html[dir='rtl'] div#audioDisableBtn, 
+html[dir='rtl'] div#audioEnableBtn, 
+html[dir='rtl'] div#audioLoading  {
+    float:right;
+}
+
+html[dir='rtl'] div#transcriptHeaderText {
+    float: right;
+    margin: 4px 2px 0 0;
+}
+
+html[dir='rtl'] div#transcriptCloseBtn {
+    float: left;
+}
+
+html[dir='rtl'] div#dialogHeaderLabel
+{
+	float:right;
+	margin:0 5px 0 0
+}
+
+html[dir='rtl'] div#dialogHeaderBtn {
+    float: left;
+}
+
+html[dir='rtl'] div.dialogButton {
+    float: left;
+}
+
+html[dir='rtl'] table#studentNameTable
+{
+	text-align:right;
+}
+
+html[dir='rtl'] div#optionTimerLabel
+{
+    padding:5px 5px 0px 0px
+}
+
+html[dir='rtl'] div.optionTimeContent
+{
+	padding:10px 25px 0 10px;
+}
+
+/*
+@media only screen and (orientation: portrait) and (max-device-width: 768px), only screen and (orientation: landscape) and (max-device-width: 1024px){
+	div#audioPlayBtn,
+	div#audioPlayBtnAuto,
+	div#audioPauseBtn,
+	div#audioStopBtn,
+	div#transcriptBtn,
+	div#audioDisableBtn,
+	div#audioEnableBtn,
+	div#audioLoading
+	{
+		margin:4px 6px 3px 6px;
+		padding:0 4px;
+	}
+}
+*/

@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>Please Wait...</title>
+<script type="text/javascript" src="../../conf/conf.js"></script>
+<script type="text/javascript" src="../../conf/conf_custom.js"></script>
+<script language="javascript">
+window.onload = function()
+{
+	if(top.opener)
+	{
+		try
+		{
+			var clientID = Conf.REVIEWER_CLIENT_ID;
+			var projectID = Conf.REVIEWER_PROJECT_ID;
+
+			var params = parseParams(document.location.search);
+
+			if (document.location.search)
+			{
+				var itemid = params['itemid'];
+			}
+			else
+			{
+				var itemid = '';
+			}
+
+			document.location.replace("http://[DOMAIN_NAME_HERE]/"+clientID+"/review/add_issue_ext.py?p="+escape(projectID)+'&itemid='+escape(itemid));
+		}
+		catch (e)
+		{
+			alert('Error: '+e);
+		}
+	}
+};
+
+parseParams = function (paramString)
+{
+	paramString = paramString.substring(1,paramString.length);
+	var d = new Object();
+	if(paramString.indexOf('=') != -1) {
+		var index0 = -1;
+		var count = 1;
+		while(((index0 + 1) < paramString.length) &&
+				((index0 = paramString.indexOf('&', index0 + 1)) != -1)) {
+			count++;
+		}
+
+		var index1 = 0;
+		var index2 = 0;
+		var keyValue = null;
+		var subindex = 0;
+		var len = paramString.length;
+
+		while(index1 < len) {
+			index2 = paramString.indexOf('&', index1);
+			if(index2 == -1)
+				index2 = len;
+				keyValue = paramString.substring(index1, index2);
+				subindex = keyValue.indexOf('=');
+				var key = keyValue.substring(0, subindex);
+				var key = key.toLowerCase();
+				var val = keyValue.substring(subindex + 1, keyValue.length)
+				d[unescape(key)] = unescape(val);
+				index1 = index2 + 1;
+			}
+		}
+	return d;
+};
+
+</script>
+</head>
+
+<body>
+Please Wait...
+</body>
+</html>
