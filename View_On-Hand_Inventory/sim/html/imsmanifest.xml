@@ -1,0 +1,605 @@
+<?xml version="1.0"?>
+<manifest identifier="MANIFEST-a8de3b72b" version="1.1" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+<organizations default="ORG-a8de3b72b">
+	<organization identifier="ORG-a8de3b72b">
+		<title>View On-Hand Inventory</title>
+		
+		<item identifier="SCO" identifierref="SCO1" isvisible="true">
+			<title>View On-Hand Inventory</title>
+			<adlcp:masteryscore>65</adlcp:masteryscore>
+		</item>
+
+		<metadata>
+			<schema>ADL SCORM</schema>
+			<schemaversion>1.2</schemaversion>
+			<imsmd:lom>
+				<imsmd:general>
+				<imsmd:catalogentry>
+					<imsmd:catalog>View On-Hand Inventory</imsmd:catalog>
+					<imsmd:entry>
+						<imsmd:langstring>View On-Hand Inventory</imsmd:langstring>
+					</imsmd:entry>
+				</imsmd:catalogentry>
+				<imsmd:title>
+					<imsmd:langstring>View On-Hand Inventory</imsmd:langstring>
+				</imsmd:title>
+				<imsmd:description>
+					<imsmd:langstring><![CDATA[View On-Hand Inventory]]></imsmd:langstring>
+				</imsmd:description>
+				<imsmd:keyword>
+					<imsmd:langstring>N/A</imsmd:langstring>
+				</imsmd:keyword>
+				</imsmd:general>
+				<imsmd:lifecycle>
+					<imsmd:version>
+						<imsmd:langstring>1.0</imsmd:langstring>
+					</imsmd:version>
+					<imsmd:status>
+						<imsmd:source>
+							<imsmd:langstring xml:lang="x-none">LOMv1.0</imsmd:langstring>
+						</imsmd:source>
+						<imsmd:value>
+							<imsmd:langstring xml:lang="x-none">Final</imsmd:langstring>
+						</imsmd:value>
+					</imsmd:status>
+				</imsmd:lifecycle>
+				<imsmd:metametadata>
+					<imsmd:metadatascheme>ADL SCORM 1.2</imsmd:metadatascheme>
+					<imsmd:language>en-US</imsmd:language>
+				</imsmd:metametadata>
+				<imsmd:technical>
+				<imsmd:format>text/html</imsmd:format>
+				<imsmd:location type="URI">.</imsmd:location>
+				<imsmd:requirement>
+					<imsmd:type>
+					<imsmd:source>
+						<imsmd:langstring xml:lang="x-none">LOMv1.0</imsmd:langstring>
+					</imsmd:source>
+					<imsmd:value>
+						<imsmd:langstring xml:lang="x-none">Browser</imsmd:langstring>
+					</imsmd:value>
+					</imsmd:type>
+					<imsmd:name>
+					<imsmd:source>
+						<imsmd:langstring xml:lang="x-none">LOMv1.0</imsmd:langstring>
+					</imsmd:source>
+					<imsmd:value>
+						<imsmd:langstring xml:lang="x-none">Microsoft Internet Explorer</imsmd:langstring>
+					</imsmd:value>
+					</imsmd:name>
+					<imsmd:minimumversion>7.0</imsmd:minimumversion>
+				</imsmd:requirement>
+				</imsmd:technical>
+				<imsmd:rights>
+				<imsmd:cost>
+					<imsmd:source>
+					<imsmd:langstring xml:lang="x-none">LOMv1.0</imsmd:langstring>
+					</imsmd:source>
+					<imsmd:value>
+					<imsmd:langstring xml:lang="x-none">no</imsmd:langstring>
+					</imsmd:value>
+				</imsmd:cost>
+				<imsmd:copyrightandotherrestrictions>
+					<imsmd:source>
+					<imsmd:langstring xml:lang="x-none">LOMv1.0</imsmd:langstring>
+					</imsmd:source>
+					<imsmd:value>
+					<imsmd:langstring xml:lang="x-none">yes</imsmd:langstring>
+					</imsmd:value>
+				</imsmd:copyrightandotherrestrictions>
+				</imsmd:rights>
+				<imsmd:classification>
+					<imsmd:purpose>
+						<imsmd:source>
+							<imsmd:langstring xml:lang="x-none">LOMv1.0</imsmd:langstring>
+						</imsmd:source>
+						<imsmd:value>
+							<imsmd:langstring xml:lang="x-none">Educational Objective</imsmd:langstring>
+						</imsmd:value>
+					</imsmd:purpose>
+					<imsmd:description>
+						<imsmd:langstring>N/A</imsmd:langstring>
+					</imsmd:description>
+					<imsmd:keyword>
+						<imsmd:langstring>N/A</imsmd:langstring>
+					</imsmd:keyword>
+				</imsmd:classification>
+			</imsmd:lom>
+			</metadata>
+
+	</organization>
+</organizations>
+<resources>
+	<resource identifier="SCO1" type="webcontent" adlcp:scormtype="sco" href="index.htm">
+<file href="index.htm" />
+<file href="sim_assessment.htm" />
+<file href="sim_auto_playback.htm" />
+<file href="sim_self_test.htm" />
+<file href="sim_standard.htm" />
+<file href="assets/css/debug_styles.css" />
+<file href="assets/css/engine.css" />
+<file href="assets/htm/blank.htm" />
+<file href="assets/htm/comment.htm" />
+<file href="assets/htm/debugger.htm" />
+<file href="assets/htm/result.htm" />
+<file href="assets/htm/usernameprompt.htm" />
+<file href="assets/img/ancile.gif" />
+<file href="assets/img/arrow.png" />
+<file href="assets/img/blank.gif" />
+<file href="assets/img/bookmark.gif" />
+<file href="assets/img/branch_icon.gif" />
+<file href="assets/img/comment.gif" />
+<file href="assets/img/completion.gif" />
+<file href="assets/img/completion.png" />
+<file href="assets/img/debug.gif" />
+<file href="assets/img/del_blue.gif" />
+<file href="assets/img/done.png" />
+<file href="assets/img/done_icon.png" />
+<file href="assets/img/flashplayer_100x100.jpg" />
+<file href="assets/img/go_blue.gif" />
+<file href="assets/img/line2.png" />
+<file href="assets/img/link.gif" />
+<file href="assets/img/link_arrow.png" />
+<file href="assets/img/loading.gif" />
+<file href="assets/img/logo.jpg" />
+<file href="assets/img/logo.png" />
+<file href="assets/img/menu_branch_connector.gif" />
+<file href="assets/img/menu_branch_extend.gif" />
+<file href="assets/img/menu_branch_single.gif" />
+<file href="assets/img/menu_here.gif" />
+<file href="assets/img/menu_minus.gif" />
+<file href="assets/img/menu_page.gif" />
+<file href="assets/img/menu_plus.gif" />
+<file href="assets/img/menu_visited.gif" />
+<file href="assets/img/page.gif" />
+<file href="assets/img/spacer.gif" />
+<file href="assets/img/ss_icon.gif" />
+<file href="assets/img/step.gif" />
+<file href="assets/img/step.png" />
+<file href="assets/img/step_icon.gif" />
+<file href="assets/img/step_win_icon.gif" />
+<file href="assets/img/step_win_icon.png" />
+<file href="assets/img/ui_bkgd.png" />
+<file href="assets/img/ui_bottom.gif" />
+<file href="assets/img/ui_bottom_left.gif" />
+<file href="assets/img/ui_bottom_right.gif" />
+<file href="assets/img/ui_left.gif" />
+<file href="assets/img/ui_line.png" />
+<file href="assets/img/ui_right.gif" />
+<file href="assets/img/ui_top.gif" />
+<file href="assets/img/ui_top_left.gif" />
+<file href="assets/img/ui_top_right.gif" />
+<file href="assets/img/x0000001.png" />
+<file href="assets/img/x0000002.png" />
+<file href="assets/js/audio-html5.js" />
+<file href="assets/js/audio.js" />
+<file href="assets/js/controller.js" />
+<file href="assets/js/dialog.js" />
+<file href="assets/js/engine.js" />
+<file href="assets/js/eventhandler.js" />
+<file href="assets/js/group.js" />
+<file href="assets/js/hotspot.js" />
+<file href="assets/js/init.js" />
+<file href="assets/js/ios-input.js" />
+<file href="assets/js/note-animator.js" />
+<file href="assets/js/note.js" />
+<file href="assets/js/point.js" />
+<file href="assets/js/step.js" />
+<file href="assets/js/timeline.js" />
+<file href="assets/js/timer-control.js" />
+<file href="assets/js/ui.js" />
+<file href="assets/js/utils.js" />
+<file href="assets/js/action/action-animator.js" />
+<file href="assets/js/action/action-audio-html5.js" />
+<file href="assets/js/action/action-audio.js" />
+<file href="assets/js/action/action.js" />
+<file href="assets/js/action/dragdrop.js" />
+<file href="assets/js/action/edit-exact.js" />
+<file href="assets/js/action/edit-freetext.js" />
+<file href="assets/js/action/edit-regex.js" />
+<file href="assets/js/action/edit.js" />
+<file href="assets/js/action/key.js" />
+<file href="assets/js/action/mouse.js" />
+<file href="assets/js/comm-factory/comm-factory-aicc.js" />
+<file href="assets/js/comm-factory/comm-factory-cookie.js" />
+<file href="assets/js/comm-factory/comm-factory-custom.js" />
+<file href="assets/js/comm-factory/comm-factory-scorm12.js" />
+<file href="assets/js/comm-factory/comm-factory-scorm2004.js" />
+<file href="assets/js/comm-factory/comm-factory.js" />
+<file href="assets/js/comm-factory/ostynscormtime.js" />
+<file href="assets/js/comm-factory/aicc/comm-support.js" />
+<file href="assets/js/comm-factory/scorm12/comm-support.js" />
+<file href="assets/js/comm-factory/scorm2004/comm-support.js" />
+<file href="assets/js/lib/cvsGraphCtx1v01.js" />
+<file href="assets/js/lib/excanvas-modified.js" />
+<file href="assets/js/lib/iscroll-min.js" />
+<file href="assets/js/lib/mootools-core-1.5.0-full-compat.js" />
+<file href="assets/js/lib/mootools-more-1.3.1.1.js" />
+<file href="assets/js/lib/objcookie.js" />
+<file href="assets/js/lib/rgbaColor.js" />
+<file href="assets/js/lib/swfobject.js" />
+<file href="assets/swf/action-audio.swf" />
+<file href="assets/swf/aicc.swf" />
+<file href="assets/swf/aiccadapter.swf" />
+<file href="assets/swf/aiccproxy.swf" />
+<file href="assets/swf/audio.swf" />
+<file href="assets/swf/expressInstall.swf" />
+<file href="conf/conf.js" />
+<file href="conf/conf_custom.js" />
+<file href="conf/lang.js" />
+<file href="conf/structure.js" />
+<file href="conf/template.css" />
+<file href="content/audio/typing.mp3" />
+<file href="content/images/1037290174.jpg" />
+<file href="content/images/1154820371.jpg" />
+<file href="content/images/1222993157.jpg" />
+<file href="content/images/1303867005.jpg" />
+<file href="content/images/1336214094.jpg" />
+<file href="content/images/144034660.jpg" />
+<file href="content/images/1601319689.jpg" />
+<file href="content/images/1602191400.jpg" />
+<file href="content/images/161666243.jpg" />
+<file href="content/images/181613117.jpg" />
+<file href="content/images/1873415660.jpg" />
+<file href="content/images/2084478833.jpg" />
+<file href="content/images/212663692.jpg" />
+<file href="content/images/250937770.jpg" />
+<file href="content/images/274790360.jpg" />
+<file href="content/images/486540318.jpg" />
+<file href="content/images/538598241.jpg" />
+<file href="content/images/609221786.jpg" />
+<file href="content/images/678704988.jpg" />
+<file href="content/images/682348879.jpg" />
+<file href="content/images/808663499.jpg" />
+<file href="content/images/834681485.jpg" />
+<file href="content/images/87303065.jpg" />
+<file href="content/images/928721873.jpg" />
+<file href="content/images/951548020.jpg" />
+<file href="content/images/999857529.jpg" />
+<file href="content/images/c0000016.png" />
+<file href="content/images/c0000019.png" />
+<file href="content/images/c0000020.png" />
+<file href="content/images/c0000021.png" />
+<file href="content/images/c0000022.png" />
+<file href="content/images/c0000023.png" />
+<file href="content/images/c0000024.png" />
+<file href="content/images/c0000027.png" />
+<file href="content/images/c0000028.png" />
+<file href="content/images/c0000151.png" />
+<file href="content/images/c0000152.png" />
+<file href="content/images/c0000155.png" />
+<file href="content/images/c0000156.png" />
+<file href="content/images/c0000157.png" />
+<file href="content/images/c0000158.png" />
+<file href="content/images/c0000159.png" />
+<file href="content/images/c0000160.png" />
+<file href="content/images/c0000161.png" />
+<file href="content/images/c0000162.png" />
+<file href="content/images/c0000163.png" />
+<file href="content/images/c0000164.png" />
+<file href="content/images/c0000165.png" />
+<file href="content/images/c0000166.png" />
+<file href="content/images/c0000167.png" />
+<file href="content/images/c0000168.png" />
+<file href="content/images/c0000169.png" />
+<file href="content/images/c0000170.png" />
+<file href="content/images/c0000171.png" />
+<file href="content/images/c0000172.png" />
+<file href="content/images/c0000173.png" />
+<file href="content/images/c0000174.png" />
+<file href="content/images/c0000175.png" />
+<file href="content/images/c0000176.png" />
+<file href="content/images/c0000177.png" />
+<file href="content/images/c0000178.png" />
+<file href="content/images/c0000179.png" />
+<file href="content/images/c0000180.png" />
+<file href="content/images/c0000181.png" />
+<file href="content/images/c0000182.png" />
+<file href="content/images/c0000183.png" />
+<file href="content/images/c0000184.png" />
+<file href="content/images/c0000185.png" />
+<file href="content/images/c0000186.png" />
+<file href="content/images/c0000191.png" />
+<file href="content/images/c0000192.png" />
+<file href="content/images/c0000193.png" />
+<file href="content/images/c0000194.png" />
+<file href="content/images/c0000201.png" />
+<file href="content/images/c0000202.png" />
+<file href="content/images/c0000209.png" />
+<file href="content/images/c0000210.png" />
+<file href="content/images/c0000213.png" />
+<file href="content/images/c0000214.png" />
+<file href="content/images/c0000215.png" />
+<file href="content/images/c0000216.png" />
+<file href="content/images/c0000225.png" />
+<file href="content/images/c0000226.png" />
+<file href="content/images/c0000229.png" />
+<file href="content/images/c0000230.png" />
+<file href="content/images/c0000231.png" />
+<file href="content/images/c0000232.png" />
+<file href="content/images/c0000233.png" />
+<file href="content/images/c0000234.png" />
+<file href="content/images/c0000235.png" />
+<file href="content/images/c0000236.png" />
+<file href="content/images/c0000243.png" />
+<file href="content/images/c0000244.png" />
+<file href="content/images/c0000245.png" />
+<file href="content/images/c0000246.png" />
+<file href="content/images/c0000253.png" />
+<file href="content/images/c0000254.png" />
+<file href="content/images/c0000273.png" />
+<file href="content/images/c0000274.png" />
+<file href="content/images/c0000281.png" />
+<file href="content/images/c0000282.png" />
+<file href="content/images/c0000285.png" />
+<file href="content/images/c0000286.png" />
+<file href="content/images/c0000287.png" />
+<file href="content/images/c0000288.png" />
+<file href="content/images/c0000291.png" />
+<file href="content/images/c0000292.png" />
+<file href="content/images/c0000313.png" />
+<file href="content/images/c0000314.png" />
+<file href="content/images/c0000319.png" />
+<file href="content/images/c0000320.png" />
+<file href="content/images/c0000323.png" />
+<file href="content/images/c0000324.png" />
+<file href="content/images/c0000325.png" />
+<file href="content/images/c0000326.png" />
+<file href="content/images/c0000327.png" />
+<file href="content/images/c0000328.png" />
+<file href="content/images/c0000329.png" />
+<file href="content/images/c0000330.png" />
+<file href="content/images/c0000339.png" />
+<file href="content/images/c0000340.png" />
+<file href="content/images/c0000357.png" />
+<file href="content/images/c0000358.png" />
+<file href="content/images/c0000359.png" />
+<file href="content/images/c0000360.png" />
+<file href="content/images/c0000363.png" />
+<file href="content/images/c0000364.png" />
+<file href="content/images/c0000365.png" />
+<file href="content/images/c0000366.png" />
+<file href="content/images/c0000367.png" />
+<file href="content/images/c0000368.png" />
+<file href="content/images/f1001830761.jpg" />
+<file href="content/images/f1033403276.jpg" />
+<file href="content/images/f1263984644.jpg" />
+<file href="content/images/f1314926424_f1603257603.jpg" />
+<file href="content/images/f1314926424_f1708744968.jpg" />
+<file href="content/images/f1343866627.jpg" />
+<file href="content/images/f1500326510.jpg" />
+<file href="content/images/f1510288335.jpg" />
+<file href="content/images/f1539575429_f1985331159.jpg" />
+<file href="content/images/f1642711767.jpg" />
+<file href="content/images/f1686852661.jpg" />
+<file href="content/images/f1736172945.jpg" />
+<file href="content/images/f1744325134.jpg" />
+<file href="content/images/f1810873442.jpg" />
+<file href="content/images/f1827289936.jpg" />
+<file href="content/images/f1910623279.jpg" />
+<file href="content/images/f1913572260.jpg" />
+<file href="content/images/f1949516379.jpg" />
+<file href="content/images/f1986221161.jpg" />
+<file href="content/images/f1988289142.jpg" />
+<file href="content/images/f202317552.jpg" />
+<file href="content/images/f2027245677.jpg" />
+<file href="content/images/f410460168.jpg" />
+<file href="content/images/f525919415.jpg" />
+<file href="content/images/f567556774_f822164348.jpg" />
+<file href="content/images/f584271900.jpg" />
+<file href="content/images/f601025602_f484921575.jpg" />
+<file href="content/images/f61091084.jpg" />
+<file href="content/images/f7338375.jpg" />
+<file href="content/images/f873197985.jpg" />
+<file href="content/images/f887720029.jpg" />
+<file href="content/images/f957251424.jpg" />
+<file href="content/images/i0000009.jpg" />
+<file href="content/images/i0000012.jpg" />
+<file href="content/images/i0000013.jpg" />
+<file href="content/images/i0000015.jpg" />
+<file href="content/images/i0000077.jpg" />
+<file href="content/images/i0000079_1.jpg" />
+<file href="content/images/i0000079_2.jpg" />
+<file href="content/images/i0000079_3.jpg" />
+<file href="content/images/i0000080.jpg" />
+<file href="content/images/i0000081.jpg" />
+<file href="content/images/i0000082.jpg" />
+<file href="content/images/i0000083.jpg" />
+<file href="content/images/i0000084.jpg" />
+<file href="content/images/i0000085.jpg" />
+<file href="content/images/i0000086.jpg" />
+<file href="content/images/i0000087.jpg" />
+<file href="content/images/i0000088.jpg" />
+<file href="content/images/i0000089.jpg" />
+<file href="content/images/i0000090.jpg" />
+<file href="content/images/i0000091.jpg" />
+<file href="content/images/i0000092.jpg" />
+<file href="content/images/i0000093.jpg" />
+<file href="content/images/i0000097.jpg" />
+<file href="content/images/i0000098.jpg" />
+<file href="content/images/i0000102.jpg" />
+<file href="content/images/i0000106.jpg" />
+<file href="content/images/i0000108.jpg" />
+<file href="content/images/i0000109.jpg" />
+<file href="content/images/i0000114.jpg" />
+<file href="content/images/i0000116.jpg" />
+<file href="content/images/i0000117.jpg" />
+<file href="content/images/i0000118.jpg" />
+<file href="content/images/i0000119.jpg" />
+<file href="content/images/i0000123.jpg" />
+<file href="content/images/i0000124.jpg" />
+<file href="content/images/i0000128.jpg" />
+<file href="content/images/i0000138.jpg" />
+<file href="content/images/i0000142_1.jpg" />
+<file href="content/images/i0000142_2.jpg" />
+<file href="content/images/i0000144.jpg" />
+<file href="content/images/i0000145.jpg" />
+<file href="content/images/i0000147.jpg" />
+<file href="content/images/i0000158.jpg" />
+<file href="content/images/i0000161.jpg" />
+<file href="content/images/i0000163.jpg" />
+<file href="content/images/i0000164.jpg" />
+<file href="content/images/i0000165.jpg" />
+<file href="content/images/i0000166.jpg" />
+<file href="content/images/i0000171.jpg" />
+<file href="content/images/i0000180.jpg" />
+<file href="content/images/i0000181.jpg" />
+<file href="content/images/i0000183.jpg" />
+<file href="content/images/i0000184.jpg" />
+<file href="content/images/i0000185.jpg" />
+<file href="content/images/o0000013.png" />
+<file href="content/images/o0000073.png" />
+<file href="content/images/o0000075.png" />
+<file href="content/images/o0000078.png" />
+<file href="content/images/o0000079.png" />
+<file href="content/images/o0000081.png" />
+<file href="content/images/o0000083.png" />
+<file href="content/images/o0000084.png" />
+<file href="content/images/o0000087.png" />
+<file href="content/images/o0000088.png" />
+<file href="content/images/o0000117.png" />
+<file href="content/images/o0000138.png" />
+<file href="content/images/o0000145.png" />
+<file href="content/images/o0000151.png" />
+<file href="content/images/o0000154.png" />
+<file href="content/images/o0000163.png" />
+<file href="content/images/o0000168.png" />
+<file href="content/images/o0000169.png" />
+<file href="content/images/o0000170.png" />
+<file href="content/images/o0000171.png" />
+<file href="content/images/o0000172.png" />
+<file href="content/images/o0000173.png" />
+<file href="content/images/o0000174.png" />
+<file href="content/images/o0000188.png" />
+<file href="content/images/o0000197.png" />
+<file href="content/images/o0000215.png" />
+<file href="content/images/o0000224.png" />
+<file href="content/images/o0000227.png" />
+<file href="content/images/o0000243.png" />
+<file href="content/images/o0000251.png" />
+<file href="content/images/o0000253.png" />
+<file href="content/images/o0000255.png" />
+<file href="content/images/o0000256.png" />
+<file href="content/images/o0000257.png" />
+<file href="content/images/o0000267.png" />
+<file href="content/images/o0000268.png" />
+<file href="content/images/o0000269.png" />
+<file href="content/images/o0000270.png" />
+<file href="content/images/o0000271.png" />
+<file href="content/images/o0000272.png" />
+<file href="content/images/o0000273.png" />
+<file href="content/images/o0000277.png" />
+<file href="content/images/o0000299.png" />
+<file href="content/images/o0000311.png" />
+<file href="content/images/o0000312.png" />
+<file href="content/images/o0000315.png" />
+<file href="content/note-icons/noteicon_0.png" />
+<file href="content/note-icons/noteicon_1.png" />
+<file href="content/note-icons/noteicon_2.png" />
+<file href="content/note-icons/noteicon_3.png" />
+<file href="content/note-icons/noteicon_4.png" />
+<file href="content/note-icons/noteicon_5.png" />
+<file href="content/note-icons/noteicon_6.png" />
+<file href="content/note-icons/noteicon_7.png" />
+<file href="printable/printable.htm" />
+<file href="printable/images/o0000013.png" />
+<file href="printable/images/o0000073.png" />
+<file href="printable/images/o0000075.png" />
+<file href="printable/images/o0000078.png" />
+<file href="printable/images/o0000079.png" />
+<file href="printable/images/o0000081.png" />
+<file href="printable/images/o0000083.png" />
+<file href="printable/images/o0000084.png" />
+<file href="printable/images/o0000087.png" />
+<file href="printable/images/o0000088.png" />
+<file href="printable/images/o0000117.png" />
+<file href="printable/images/o0000138.png" />
+<file href="printable/images/o0000145.png" />
+<file href="printable/images/o0000151.png" />
+<file href="printable/images/o0000154.png" />
+<file href="printable/images/o0000163.png" />
+<file href="printable/images/o0000168.png" />
+<file href="printable/images/o0000169.png" />
+<file href="printable/images/o0000170.png" />
+<file href="printable/images/o0000171.png" />
+<file href="printable/images/o0000172.png" />
+<file href="printable/images/o0000173.png" />
+<file href="printable/images/o0000174.png" />
+<file href="printable/images/o0000188.png" />
+<file href="printable/images/o0000197.png" />
+<file href="printable/images/o0000215.png" />
+<file href="printable/images/o0000224.png" />
+<file href="printable/images/o0000227.png" />
+<file href="printable/images/o0000243.png" />
+<file href="printable/images/o0000251.png" />
+<file href="printable/images/o0000253.png" />
+<file href="printable/images/o0000255.png" />
+<file href="printable/images/o0000256.png" />
+<file href="printable/images/o0000257.png" />
+<file href="printable/images/o0000267.png" />
+<file href="printable/images/o0000268.png" />
+<file href="printable/images/o0000269.png" />
+<file href="printable/images/o0000270.png" />
+<file href="printable/images/o0000271.png" />
+<file href="printable/images/o0000272.png" />
+<file href="printable/images/o0000273.png" />
+<file href="printable/images/o0000277.png" />
+<file href="printable/images/o0000311.png" />
+<file href="printable/images/o0000312.png" />
+<file href="printable/images/o0000315.png" />
+<file href="printable/images/screenshot.png" />
+<file href="skin/action_dnd.png" />
+<file href="skin/action_edit.png" />
+<file href="skin/action_key.png" />
+<file href="skin/action_mouse_leftclick.png" />
+<file href="skin/action_mouse_leftdoubleclick.png" />
+<file href="skin/action_mouse_rightclick.png" />
+<file href="skin/apple-touch-icon-precomposed.png" />
+<file href="skin/arrow_left.gif" />
+<file href="skin/arrow_right.gif" />
+<file href="skin/audio_controls_disable.gif" />
+<file href="skin/audio_controls_enable.gif" />
+<file href="skin/audio_controls_loading.gif" />
+<file href="skin/audio_controls_pause.gif" />
+<file href="skin/audio_controls_play.gif" />
+<file href="skin/audio_controls_stop.gif" />
+<file href="skin/audio_transcript.gif" />
+<file href="skin/close.gif" />
+<file href="skin/exit.gif" />
+<file href="skin/info.png" />
+<file href="skin/input-bar-help-close.png" />
+<file href="skin/input-bar-help.png" />
+<file href="skin/ios_audio_promt_header.png" />
+<file href="skin/ios_audio_promt_pointer.png" />
+<file href="skin/ios_input_close.png" />
+<file href="skin/ios_input_key.png" />
+<file href="skin/ios_input_key_active.png" />
+<file href="skin/ios_input_mouse.png" />
+<file href="skin/ios_input_mouse_active.png" />
+<file href="skin/ios_input_open.png" />
+<file href="skin/ios_input_sep.png" />
+<file href="skin/menu_config.png" />
+<file href="skin/menu_group.png" />
+<file href="skin/menu_minus.png" />
+<file href="skin/menu_pin_false.png" />
+<file href="skin/menu_pin_true.png" />
+<file href="skin/menu_plus.png" />
+<file href="skin/menu_print.png" />
+<file href="skin/menu_resizer.png" />
+<file href="skin/menu_skip.png" />
+<file href="skin/menu_status_default.png" />
+<file href="skin/menu_status_here.png" />
+<file href="skin/menu_status_visited.png" />
+<file href="skin/menu_win_contract.png" />
+<file href="skin/menu_win_expand.png" />
+<file href="skin/minus.png" />
+<file href="skin/open.gif" />
+<file href="skin/playback_controls_pause.gif" />
+<file href="skin/playback_controls_play.gif" />
+<file href="skin/plus.png" />
+<file href="skin/skin.css" />
+<file href="skin/spacer.gif" />
+
+	</resource>
+</resources>
+</manifest>
